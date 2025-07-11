@@ -53,3 +53,8 @@ streamlit run app.py
 ├── requirements.txt      # Project dependencies
 ├── 2026 QS World University Rankings.csv  # Dataset
 └── README.md
+
+👨‍💻 Author
+Developed by Lawrence Andre' Q. Cabana
+Open to feedback, collaborations, or hiring opportunities!
+
