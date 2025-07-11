@@ -54,7 +54,9 @@ streamlit run app.py
 ├── 2026 QS World University Rankings.csv  # Dataset
 └── README.md
 
-👨‍💻 Author
+---
+
+##👨‍💻 Author
 Developed by Lawrence Andre' Q. Cabana
 Open to feedback, collaborations, or hiring opportunities!
 
