@@ -1,62 +1,83 @@
+Absolutely! Here's the updated `README.md` with an **Author** section and the **MIT license badge** added at the top for a clean, professional look:
+
+---
+
+````markdown
 # 🎓 QS University Rank Predictor
 
-Predict your university's 2026 QS World Rank using real metrics — built with Machine Learning, XGBoost, and Streamlit.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+A machine learning-powered Streamlit web app that predicts a university’s **2026 QS World University Rank** based on official QS indicators like Academic Reputation, Faculty-Student Ratio, International Faculty Ratio, and more.
 
 ---
 
-## 📌 Overview
+## 🚀 Features
 
-This project uses a **stacked regression model** (Linear Regression + Random Forest + XGBoost) trained on the **2026 QS World University Rankings dataset** to estimate a university’s QS Rank based on key performance indicators.
-
-🔮 **Features:**
-- Predicts QS Rank based on academic and internationalization scores
-- Explains most influential metrics
-- Benchmark against other universities in your region or country
-- Save & load custom input profiles for repeated use
-- Clean, responsive Streamlit UI
+- ✅ **Rank Prediction** using StackingRegressor (Linear + Forest → XGBoost)
+- 🧮 **Key Metric Inputs**: AR SCORE, CPF SCORE, Overall SCORE, etc.
+- 🧠 **Model Explanation**: Highlights the most influential features
+- 💾 **Save & Load Profiles**: For comparing different metric combinations
+- 🌍 **Benchmarking**: Shows how your scores compare to others in your country/region
+- 📊 **Interactive UI** built with Streamlit
 
 ---
 
-## 🚀 Live App
+## 📂 How to Run
 
-https://qs-rank-predictor.streamlit.app/
+1. Clone the repo:
 
----
-
-## 📊 Model Details
-
-- Preprocessing: OneHotEncoding + StandardScaler
-- Feature Selection: RandomForestRegressor + SelectFromModel
-- Final Model: StackingRegressor with Linear & Forest base models, XGBoost as meta-learner
-- Metrics Used: 13 total including `AR SCORE`, `ER SCORE`, `Overall SCORE`, `Previous Rank`, etc.
-
-📈 **Model Performance**
-
-R² Score: 0.9918
-MAE: ~26
-RMSE: ~46
-
----
-
-## ⚙️ How to Use Locally
-
-### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/qs-rank-predictor.git
+git clone https://github.com/ParkHyunseok69/qs-rank-predictor.git
 cd qs-rank-predictor
-pip install -r requirements.txt
-streamlit run app.py
+````
 
-├── app.py                # Streamlit frontend
-├── model.py              # ML pipeline and model training
-├── uni_rank_predictor.pkl # Trained pipeline model
-├── requirements.txt      # Project dependencies
-├── 2026 QS World University Rankings.csv  # Dataset
-└── README.md
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the app:
+
+```bash
+streamlit run app.py
+```
 
 ---
 
-##👨‍💻 Author
-Developed by Lawrence Andre' Q. Cabana
-Open to feedback, collaborations, or hiring opportunities!
+## 🧠 Model Architecture
 
+* Preprocessing: `StandardScaler`, `OneHotEncoder`
+* Feature Selection: `SelectFromModel` using `RandomForestRegressor`
+* Base Models: `LinearRegression`, `RandomForestRegressor`
+* Meta Learner: `XGBoostRegressor`
+* Final MAE: \~26.7 | RMSE: \~46 | R²: 0.99+
+
+---
+
+## 📘 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Lawrence Andre' Q. Cabana**
+📫 [Visit my GitHub](https://github.com/ParkHyunseok69)
+🔭 I’m building AI tools with practical real-world value.
+🧠 Always learning — currently into ML, game dev, and automation.
+
+---
+
+> *This app is for educational and demonstration purposes only.*
+
+```
+
+---
+
+Let me know if you'd also like to:
+- Add a contributors section
+- Add deployment instructions (for Streamlit Cloud)
+- Add a demo video or GIF preview at the top  
+```
