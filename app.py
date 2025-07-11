@@ -93,7 +93,7 @@ with st.expander("📊 Benchmark Against Selected Country & Region"):
                 user_val = user_inputs[field]
                 country_percentile = (selected_country_data < user_val).mean() * 100
                 region_percentile = (selected_region_data < user_val).mean() * 100
-                st.markdown(f"**{field}**: Top **{100 - int(country_percentile)}%** in s{country_input}, Top **{100 - int(region_percentile)}%** in 🌎 {region_input}")
+                st.markdown(f"**{field}**: Top **{100 - int(country_percentile)}%** in {country_input}, Top **{100 - int(region_percentile)}%** in 🌎 {region_input}")
             except:
                 pass
 
