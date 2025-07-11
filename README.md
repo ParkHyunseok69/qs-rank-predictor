@@ -1,8 +1,3 @@
-Absolutely! Here's the updated `README.md` with an **Author** section and the **MIT license badge** added at the top for a clean, professional look:
-
----
-
-````markdown
 # 🎓 QS University Rank Predictor
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
